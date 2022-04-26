@@ -10,9 +10,10 @@
     display: none;
 }
 .container label{
-    background-color: blanchedalmond;
+    background-color: rgb(236, 235, 234);
     padding: 20px;
-    border:2px solid black;
+    /* border:2px solid black; */
+    box-shadow: 0 0 2px 2px rgb(208, 191, 191);
     border-radius: 10px;
     cursor: pointer;
     transition: all 0.3s;
@@ -21,7 +22,9 @@
 .container label:hover{
     background-color: rgb(116, 101, 101);
     transform: scale(1.2);
+    color:white;
 }
-.container input[type="radio"]:focus+label{
-    background-color: green;
+.container input[type="radio"]:checked+label{
+    background-color: rgb(83, 115, 113);
+    color: white;
 }
